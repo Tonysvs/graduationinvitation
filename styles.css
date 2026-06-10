@@ -314,8 +314,6 @@ h2 em, .quote em {
 .success p { color: #9d988d; font-size: 12px; }
 .success .button { margin-top: 18px; }
 .success button { display: block; margin: 22px auto 0; border: 0; border-bottom: 1px solid #77736b; background: transparent; color: #9d988d; cursor: pointer; font: 9px/1 "Manrope", sans-serif; letter-spacing: .12em; text-transform: uppercase; }
-footer { display: flex; align-items: center; justify-content: space-between; padding: 36px 5vw; background: #10100c; color: #89857c; }
-footer p, footer > a:last-child { margin: 0; font-size: 8px; letter-spacing: .14em; text-decoration: none; text-transform: uppercase; }
 .reveal { opacity: 0; transform: translateY(20px); animation: reveal .8s ease forwards; }
 .delay-1 { animation-delay: .15s; }
 .delay-2 { animation-delay: .3s; }
@@ -363,6 +361,4 @@ footer p, footer > a:last-child { margin: 0; font-size: 8px; letter-spacing: .14
   .quote { min-height: 360px; }
   .rsvp { grid-template-columns: 1fr; gap: 70px; }
   .choice-row { grid-template-columns: 1fr; }
-  footer { gap: 25px; padding: 28px 22px; }
-  footer p { display: none; }
 }
