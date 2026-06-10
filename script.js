@@ -28,7 +28,7 @@ const guestField = document.querySelector("#guest-field");
 const success = document.querySelector("#success");
 const formHelp = document.querySelector("#form-help");
 const submitButton = form.querySelector('button[type="submit"]');
-const formspreeEndpoint = "https://formspree.io/f/YOUR_FORM_ID";
+const formspreeEndpoint = "https://formspree.io/f/xykapwdp";
 
 form.addEventListener("change", (event) => {
   if (event.target.name === "attendance") {
@@ -42,12 +42,6 @@ form.addEventListener("submit", async (event) => {
   const name = data.get("name").trim();
   const attending = data.get("attendance") === "yes";
   const guests = data.get("guests");
-
-  if (formspreeEndpoint.includes("YOUR_FORM_ID")) {
-    formHelp.textContent = "RSVP database setup is not finished yet. Add your Formspree form ID in script.js.";
-    formHelp.classList.add("error");
-    return;
-  }
 
   submitButton.disabled = true;
   submitButton.innerHTML = "Saving RSVP…";
