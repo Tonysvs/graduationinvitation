@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171712" />
+    <meta
+      name="description"
+      content="Join us to celebrate Anthony's graduation from UC San Diego, Class of 2026."
+    />
+    <title>Anthony's Graduation Celebration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@400;500;600&family=MonteCarlo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="nav">
+      <nav aria-label="Main navigation">
+        <a href="#details">Details</a>
+        <a href="#rsvp">RSVP</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-card">
+          <p class="hero-invite reveal">You are invited to</p>
+          <div class="hero-figure reveal delay-1" aria-hidden="true">
+            <span class="figure-spark figure-spark-one">✦</span>
+            <span class="figure-spark figure-spark-two">✦</span>
+            <svg viewBox="0 0 420 240">
+              <path d="M55 92 210 24l155 68-155 69L55 92Z" />
+              <path d="M111 126v53c52 46 146 46 198 0v-53" />
+              <path d="M365 92v82" />
+              <path d="M365 174c-17 12-21 31-12 43" />
+              <circle cx="365" cy="92" r="6" />
+              <path d="m42 47-12-9m30-5 4-15m297 26 14-8m-32-5-3-15" />
+            </svg>
+          </div>
+          <div class="hero-title-wrap reveal delay-1">
+            <h1>Graduation</h1>
+            <em>Party</em>
+          </div>
+          <div class="hero-honoree reveal delay-2">
+            <p>In honor of:</p>
+            <strong>Anthony</strong>
+          </div>
+          <a class="button primary hero-cta reveal delay-3" href="#rsvp">
+            Confirm attendance <span>↓</span>
+          </a>
+          <a class="hero-arrow reveal delay-3" href="#details" aria-label="See event details">↓</a>
+        </div>
+      </section>
+
+      <section class="countdown-wrap" aria-label="Countdown to the celebration">
+        <p>Celebration begins in</p>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">00</strong><span>days</span></div>
+          <i></i>
+          <div><strong id="hours">00</strong><span>hours</span></div>
+          <i></i>
+          <div><strong id="minutes">00</strong><span>minutes</span></div>
+          <i></i>
+          <div><strong id="seconds">00</strong><span>seconds</span></div>
+        </div>
+      </section>
+
+      <section class="details section" id="details">
+        <div class="section-heading">
+          <p class="eyebrow">The occasion</p>
+          <h2>A milestone worth<br /><em>celebrating</em></h2>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card">
+            <p class="label">When</p>
+            <h3>Sunday<br />June 14, 2026</h3>
+            <p>Celebration begins at 4:00 PM</p>
+            <a href="anthony-graduation.ics" download>Add to calendar <b>↗</b></a>
+          </article>
+          <article class="detail-card">
+            <p class="label">Where</p>
+            <h3>1910 Isla del<br />Carmen Way</h3>
+            <p>San Diego, California 92173</p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=1910+Isla+del+Carmen+Way+San+Diego+CA+92173"
+              target="_blank"
+              rel="noreferrer"
+            >Get directions <b>↗</b></a>
+          </article>
+          <article class="detail-card">
+            <p class="label">The vibe</p>
+            <h3>Good food<br />&amp; great company</h3>
+            <p>Come ready to toast the graduate.</p>
+            <a href="#rsvp">Save your place <b>↘</b></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="quote section">
+        <div class="cap-line" aria-hidden="true"></div>
+        <p>One chapter closes.<br />The next one is <em>just beginning.</em></p>
+      </section>
+
+      <section class="rsvp section" id="rsvp">
+        <div class="rsvp-intro">
+          <p class="eyebrow">Kindly reply</p>
+          <h2>Will you be<br /><em>joining us?</em></h2>
+          <p>
+            Your presence would make this day even more special. Please let us know if you can make it.
+          </p>
+          <div class="contact">
+            <span>Questions?</span>
+            <a href="tel:+16195305524">(619) 530-5524</a>
+          </div>
+        </div>
+
+        <form class="rsvp-form" id="rsvp-form">
+          <label>
+            Your name
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="First & last name" required />
+          </label>
+
+          <fieldset>
+            <legend>Can you attend?</legend>
+            <div class="choice-row">
+              <label class="choice">
+                <input type="radio" name="attendance" value="yes" required />
+                <span><b>Joyfully accepts</b><small>I’ll be there</small></span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="attendance" value="no" required />
+                <span><b>Regretfully declines</b><small>Celebrating from afar</small></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <label class="guest-field" id="guest-field">
+            Number of guests
+            <select id="guests" name="guests">
+              <option value="0">No guests</option>
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5+">5+ guests</option>
+            </select>
+          </label>
+
+          <button class="button primary submit" type="submit">Send my RSVP <span>→</span></button>
+          <p class="form-help" id="form-help">Your response will be saved securely.</p>
+        </form>
+
+        <div class="success" id="success" aria-live="polite">
+          <span>✓</span>
+          <h3>Thank you, <b id="success-name">friend</b>.</h3>
+          <p id="success-copy">Your RSVP has been saved.</p>
+          <button type="button" id="edit-rsvp">Edit response</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="monogram" href="#top">A<span>26</span></a>
+      <p>Made with love for Anthony’s graduation</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

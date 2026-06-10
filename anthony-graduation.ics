@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Anthony Graduation//EN
+BEGIN:VEVENT
+UID:anthony-graduation-2026@example.com
+DTSTAMP:20260609T000000Z
+DTSTART;TZID=America/Los_Angeles:20260614T160000
+DTEND;TZID=America/Los_Angeles:20260614T200000
+SUMMARY:Anthony's Graduation Party
+DESCRIPTION:Celebrating Anthony\, UC San Diego Class of 2026.
+LOCATION:1910 Isla del Carmen Way\, San Diego\, CA 92173
+END:VEVENT
+END:VCALENDAR
