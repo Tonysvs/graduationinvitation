@@ -237,7 +237,7 @@ h2 em, .quote em {
 .detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 70px; border-top: 1px solid var(--line); }
 .detail-card { position: relative; min-height: 410px; padding: 44px 30px 30px 0; border-right: 1px solid var(--line); }
 .detail-card + .detail-card { padding-left: 30px; }
-.detail-card > span { position: absolute; top: 20px; right: 20px; color: var(--gold); font: 12px/1 "Italiana", serif; }
+.detail-card > span { display: none; }
 .label { margin-bottom: 40px; color: var(--gold); font-size: 9px; letter-spacing: .22em; text-transform: uppercase; }
 .detail-card h3 { min-height: 120px; margin-bottom: 30px; font: 38px/1.07 "Italiana", serif; text-transform: uppercase; }
 .detail-card p:not(.label) { min-height: 45px; color: var(--muted); font-size: 12px; line-height: 1.7; }
